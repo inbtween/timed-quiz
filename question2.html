@@ -16,36 +16,33 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Quiz Challenge</h1>
-        <h5 ><p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p></h5>
-        <h6><button type="button" id="startGame" class="btn btn-success">Start Game</button>
-            <button type="button" id="gameOver" class="btn btn-danger">Game Over</button></h6></header>
-        <div></div>
-        <h6 class="time" style="text-align:center;"></h6>
-          <form  id="main">
+      <header></header>
+        <div class="card text-center">
+          <div class="card-header">
+            <h1>Quiz Challenge</h1>
+          </div>
+          <div id="mainQuestion2" class="card-body">
+            <h6 class="card-title"><p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p></h6>
+            <h5><p class="card-text">Question 2: JavaScript syntax is the set of rules that...</p></h5>
             <div class="form-group">
-                <button type="button" id="questionTwo" class="btn btn-outline-dark">Question 2: JavaScript syntax is the set of rules that...</button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerA" class="btn btn-secondary btn-lg btn-block">A:// Declare Variables</button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerB" class="btn btn-secondary btn-lg btn-block">B:// Assign Value </button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerC" class="btn btn-secondary btn-lg btn-block">C:// Compute Values</button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerD" class="btn btn-secondary btn-lg btn-block">D: All of the above</button>
-            </div>
-            <div class="form-group">
-                <input id="submitAnswer" class="btn btn-primary" type="submit" value="Submit">
-            </div>
-            </form>
+              <button type="button" id="answerA" class="btn btn-secondary btn-lg btn-block">A:// Declare Variables</button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerB" class="btn btn-secondary btn-lg btn-block">B:// Assign Value </button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerC" class="btn btn-secondary btn-lg btn-block">C:// Compute Values</button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerD" class="btn btn-secondary btn-lg btn-block">D: All of the above</button>
+          </div>
+          <div class="form-group">
+              <input id="submitAnswer" class="btn btn-primary" type="submit" value="Submit">
+          </div>
+          <div class="card-footer text-muted">
+          <h5 class="time" style="text-align:center;"></h5>
+          </div>
         </div>
-        
-    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -16,36 +16,33 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Quiz Challenge</h1>
-        <h5 ><p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p></h5>
-        <h6><button type="button" id="startGame" class="btn btn-success">Start Game</button>
-            <button type="button" id="gameOver" class="btn btn-danger">Game Over</button></h6>
-      </header>
-        <div></div>
-          <form  id="main">
-            <div id="mainQuestion3" class="form-group">
-                <button type="button" id="questionThree" class="btn btn-outline-dark">Question 3: A CSS syntax consists of a selector and a declaration block:</button>
-            </div>
+      <header></header>
+        <div class="card text-center">
+          <div class="card-header">
+            <h1>Quiz Challenge</h1>
+          </div>
+          <div id="mainQuestion3" class="card-body">
+            <h6 class="card-title"><p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p></h6>
+            <h5><p class="card-text">Question 3: A CSS syntax consists of a selector and a declaration block:</p></h5>
             <div class="form-group">
-                <button type="button" id="answerA" class="btn btn-secondary btn-lg btn-block">A: The declaration block contains no useful information.</button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerB" class="btn btn-secondary btn-lg btn-block">B: Multiple CSS declarations are separated with semicolons. </button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerC" class="btn btn-secondary btn-lg btn-block">C: The selector points to the HTML element you want to style.</button>
-            </div>
-            <div class="form-group">
-                <button type="button" id="answerD" class="btn btn-secondary btn-lg btn-block">D: Declaration blocks are surrounded by parenthesis.</button>
-            </div>
-            <div class="form-group">
-                <input id="submitAnswer" class="btn btn-primary" type="submit" value="Submit">
-            </div>
-            </form>
+              <button type="button" id="answerA" class="btn btn-secondary btn-lg btn-block">A: The declaration block contains no useful information.</button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerB" class="btn btn-secondary btn-lg btn-block">B: Multiple CSS declarations are separated with semicolons. </button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerC" class="btn btn-secondary btn-lg btn-block">C: The selector points to the HTML element you want to style.</button>
+          </div>
+          <div class="form-group">
+              <button type="button" id="answerD" class="btn btn-secondary btn-lg btn-block">D: Declaration blocks are surrounded by parenthesis.</button>
+          </div>
+          <div class="form-group">
+              <input id="submitAnswer" class="btn btn-primary" type="submit" value="Submit">
+          </div>
+          <div class="card-footer text-muted">
+          <h5 class="time" style="text-align:center;"></h5>
+          </div>
         </div>
-        
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
