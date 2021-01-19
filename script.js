@@ -1,4 +1,5 @@
 // start button
+
 // THEN a timer starts
 // presented with a question 1
 // WHEN I answer a question, submit
@@ -7,7 +8,7 @@
 // WHEN I answer a question, submit
 
 // if WHEN I answer a question incorrectly
-// HEN time is subtracted from the clock
+// WHEN time is subtracted from the clock
 
 // WHEN all questions are answered or the timer reaches 0
 
@@ -16,19 +17,21 @@
 // WHEN the game is over
 // THEN I can save my initials and my score
 
+// toggle between start over
+
 // Selects element by class
 var timeEl = document.querySelector(".time");
 
 // Selects element by id
 var mainEl = document.getElementById("main");
 
-var secondsLeft = 10;
+var secondsLeft = 30;
 
 function setTime() {
   // Sets interval in variable
   var timerInterval = setInterval(function () {
     secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    timeEl.textContent = secondsLeft + " seconds left";
 
     if (secondsLeft === 0) {
       // Stops execution of action at set interval
@@ -43,7 +46,7 @@ function setTime() {
 function sendMessage() {
   timeEl.textContent = " ";
   var imgEl = document.createElement("img");
-  imgEl.setAttribute("src", "images/image_1.jpg");
+  imgEl.setAttribute("src", "");
   mainEl.appendChild(imgEl);
 }
 
