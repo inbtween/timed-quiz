@@ -15,7 +15,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+h5,
+h1 {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
 header {
   text-align: center;
   padding: 10px;
