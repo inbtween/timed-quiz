@@ -1,7 +1,8 @@
-// start button, click event
 var questionsPage = document.getElementById("questionsPage");
 var questionIndex = 0;
-// function startQuiz
+var timerCountDown = 60;
+var countdown = "";
+// function startQuiz // start button, click event
 var startButton = document.getElementById("startGame");
 function startQuiz() {
   var startScreen = document.getElementById("start-screen");
@@ -18,11 +19,35 @@ function nextQuestion() {
   var title = document.getElementById("questionTitle");
   title.textContent = questions[questionIndex].question;
 }
-// function choices() {questions[questionIndex].choices.forEach(function(choice, i) {
+function choices() {
+  questions[questionIndex].choices.forEach(function callAnswer(choice, i) {
+var answer = document.getElementById("theAnswer");
+answer.textContent = questions[questionIndex].choices;
+});
+
+// function showQuestion(i) {
+//   var html = "";
+//   var current_q = questions[i];
+//   html += `<h2>${current_q.q}</h2>`;
+//   // add the answers (as buttons) buttons need listener...
+//   for (b = 0; b < current_q.a.length; b++) {
+//     html += `<button class="buttons" onclick="check_answer(${i},${b})">${current_q.a[b]}</button>`;
+//   }
+//   // display in the quiz div
+//   document.getElementById("quiz").innerHTML = html;
+// function check_answer(questionNumber, answerIndex) {
+//   //prompt(questionNumber + " " + answerIndex);
+//   // For the incoming question number, see if the correct answerIndex was clicked.
+//   var current_q = questions[questionNumber];
+//   if (current_q.c === answerIndex) {
+//     console.log("correct");
+//     document.getElementById("message").innerHTML =
+//       "<h2>Correct! Good job!</h2>";
+
 //   // create new button for each choice
-//   // attach click event listener to each choice
-//   // display on the page
-// });
+  // attach click event listener to each choice
+  // display on the page
+});
 
 // THEN a timer starts
 // presented with a question 1
