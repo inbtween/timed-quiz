@@ -1,17 +1,39 @@
 // start button, click event
+var questionsPage = document.getElementById("questionsPage");
+var questionIndex = 0;
 // function startQuiz
-
 var startButton = document.getElementById("startGame");
 function startQuiz() {
+  var startScreen = document.getElementById("start-screen");
+  startScreen.setAttribute("class", "hide");
+  questionsPage.removeAttribute("class", "hide");
+  nextQuestion();
   // hide the start screen
   // unhide the question sections
   // start the timer and show the time
   // get the 1st question
 }
+function nextQuestion() {
+  questions[questionIndex];
+  var title = document.getElementById("questionTitle");
+  title.textContent = questions[questionIndex].question;
+}
+// function choices() {questions[questionIndex].choices.forEach(function(choice, i) {
+//   // create new button for each choice
+//   // attach click event listener to each choice
+//   // display on the page
+// });
 
 // THEN a timer starts
 // presented with a question 1
 // WHEN I answer a question, submit
+
+// button click, each button listen for a click, execute a function question click to see if answer was wrong or right
+// tell them if tehy are wrong or right
+// quiz end quiz if not the next qiestion function
+
+// the questions end when the length is questions.length-1
+// depending on which button is clicked, 4 click event button, add a vlue and bring that into js
 
 // presented with a question 2
 // WHEN I answer a question, submit
