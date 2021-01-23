@@ -1,3 +1,21 @@
+const startButton = document.getElementById("startGame");
+
+startButton.addEventListener("click", startGame);
+// listen for the click to start the game
+
+function startButton() {
+  // the argument for the start button
+}
+
+function nextQuestion() {
+  // set up the next question on the list
+}
+
+function selectAnswer() {
+  // selecting the correct answer
+}
+// startButton.onclick = startQuiz;
+
 var questionsPage = document.getElementById("questionsPage");
 var questionIndex = 0;
 var timerCountDown = 60;
@@ -33,10 +51,6 @@ function startQuiz() {
 
 // var secondsLeft = 1000;
 // var i = 0;
-
-function startButton() {}
-
-startButton.onclick = startQuiz;
 
 // // * It's done when the countdown appears on the screen that indicates the number of seconds remaining before the speed reader begins.
 
