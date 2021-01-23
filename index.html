@@ -14,7 +14,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+</div>
+    </div>
     <div id="start-screen" class="container">
       <div class="card-header">
         <h1>Quiz Challenge</h1>
@@ -25,13 +26,8 @@
                 <h6><button type="button" id="startGame" class="btn btn-success">Start Game</button>
               </div>
           </div>
-          <div id="start-screen" class="card text-center">
-            <div class="card-body">
-              <button type="button" id="gameOver" class="btn btn-danger">Game Over</button>
-            </div>
         </div>
     </div>
-    <div id="timer"></div>
     <div id="questionsPage" class="container hide">
   <h5 id="questionTitle"></h5>
   <div class="form-group">
@@ -66,9 +62,11 @@
   >
   </button>
 </div>
-    </div>
+<div id="endScreen" class="container">
+      <div id="gameOver" class="container hide">
+        <button type="button" class="btn btn-danger">Game Over</button>
+      </div>
   </div>
-  <div id="endScreen" class="container hide"></div>
     <script src="questions.js"></script>
     <script src="script.js"></script>
   </body>
