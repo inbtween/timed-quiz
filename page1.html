@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Quiz</title>
+    <!-- added bootstrap stylesheet link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="card-header">
+            <h1>Quiz Challenge</h1>
+              </div>
+              <div class="card text-center">
+                  <div class="card-body">
+                    <p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p>
+    <div>
+        <div id="questionPage" class="hide">
+            <div id="questionsTitle">Question</div>
+            <div id="answerButtons" class="btn btn-grid">
+                <button onclick="checkAnswer" >
+                    <button id="gameOver" class="btn btn-success">Answer</button>
+                </div>
+            <div class="controlButtons"><button id="startGame" class="btn btn-success">Start Game</button>
+            </div>
+            </div>
+        </div>
+        <div id="endscreen">
+            <div class="controlButtons">
+                <button id="gameOver" class="btn btn-success hide">End Game</button>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</html>
