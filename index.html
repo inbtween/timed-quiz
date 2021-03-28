@@ -1,74 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Quiz</title>
-    <!-- added bootstrap stylesheet link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-</div>
-    </div>
-    <div id="start-screen" class="container">
-      <div class="card-header">
-        <h1>Quiz Challenge</h1>
-          </div>
-          <div class="card text-center">
-              <div class="card-body">
-                <h6 class="card-title"><p>Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</p></h6>
-                <h6><button type="button" id="startGame" class="btn btn-success">Start Game</button>
+<html>
 
-              </div>
-          </div>
-        </div>
-    </div>
-    <div id="questionsPage" class="container hide">
-  <h5 id="questionTitle"></h5>
-  <div class="form-group">
-    <button onclick="checkAnswer"
-      type="button"
-      id="theAnswer"
-      class="btn btn-secondary btn-lg btn-block"
-    >
-    </button>
-  </div>
-  <div class="form-group">
-    <button onclick="checkAnswer"
-      type="button"
-      id="theAnswer"
-      class="btn btn-secondary btn-lg btn-block"
-    >
-  </button>
-</div>
-<div class="form-group">
-  <button onclick="checkAnswer"
-    type="button"
-    id="theAnswer"
-    class="btn btn-secondary btn-lg btn-block"
-  >
-  </button>
-</div>
-<div class="form-group">
-  <button onclick="checkAnswer"
-    type="button"
-    id="theAnswer"
-    class="btn btn-secondary btn-lg btn-block"
-  >
-  </button>
-</div>
-<div id="endScreen" class="container">
-      <div id="gameOver" class="container hide">
-        <button type="button" class="btn btn-danger">Game Over</button>
+<head>
+    <title>Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+          />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="large-font">Quiz Challenge</div>
+        <button class="btn btn-success" id="start-button">Start</button>
+    </header>
+    <div class="countdown-container">
+      <div class="countdown-el seconds-c">
+        <span>seconds</span>
+        <p class="big-text" id="seconds">0</p>
+        
+       
       </div>
-  </div>
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+    </div>
+    <main>
+        <section>
+          <div id="start-screen"class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Please try to answer the following code-related questions within the time limit. You will be penalized 10 secs for each wrong answer.</h5>
+          
+            </div>
+          </div>
+        </section>
+
+        <section display="flex">
+          <div id="questionPage">
+            <div id="questionsTitle">Question</div>
+            <div id="answer-buttons" class="btn-grid hide">
+              <button id="answerButtons" class="btn btn-primary">Answer</button> 
+              <button id="answerButtons" class="btn btn-primary">Answer</button> 
+              <button id="answerButtons" class="btn btn-primary">Answer</button> 
+              <button id="answerButtons" class="btn btn-primary">Answer</button> 
+            </div>
+          </div>
+          </section>
+          <section>
+            <div class="card results">
+                <div class="win-loss-container">
+                    <div>
+                        <h2>Wins: <span class="win">0</span> </h2>
+                        <h2>Losses: <span class="lose">0</span></h2>
+                    </div>
+                    <button class="reset-button">Reset Score</button>
+                </div>
+                <div class="card timer">
+                    <div class="timer-text">
+                        <div class="large-font timer-count">10</div>
+                        <h3>seconds remaining</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </main>
+        <script src="assets/script.js"></script>
+        <script src="assets/questions.js"></script>
+      </body>
+      
+      </html>
+      
